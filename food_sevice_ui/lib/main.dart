@@ -26,6 +26,14 @@ class Hamberger extends StatefulWidget {
 class _HambergerState extends State<Hamberger> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            title: Text("Deliver me"),
+          )
+        ],
+      ),
+    );
   }
 }
