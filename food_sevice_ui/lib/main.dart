@@ -9,6 +9,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Hamberger(),
+    );
+  }
+}
+
+class Hamberger extends StatefulWidget {
+  const Hamberger({Key? key}) : super(key: key);
+
+  @override
+  State<Hamberger> createState() => _HambergerState();
+}
+
+class _HambergerState extends State<Hamberger> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
