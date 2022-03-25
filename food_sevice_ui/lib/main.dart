@@ -9,9 +9,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Hamberger(),
+      theme: ThemeData(
+          appBarTheme:
+              const AppBarTheme(color: Colors.teal, centerTitle: true)),
+      home: const Hamberger(),
     );
   }
 }
@@ -26,11 +29,16 @@ class Hamberger extends StatefulWidget {
 class _HambergerState extends State<Hamberger> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            title: Text("Deliver me"),
+            title: const Text("Deliver me"),
+            leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+            actions: [
+              IconButton(
+                  onPressed: () {}, icon: const Icon(Icons.shopping_cart)),
+            ],
           )
         ],
       ),
