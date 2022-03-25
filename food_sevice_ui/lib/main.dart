@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/header.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,13 +34,15 @@ class _HambergerState extends State<Hamberger> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            pinned: true,
             title: const Text("Deliver me"),
             leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
             actions: [
               IconButton(
                   onPressed: () {}, icon: const Icon(Icons.shopping_cart)),
             ],
-          )
+          ),
+          Header(),
         ],
       ),
     );

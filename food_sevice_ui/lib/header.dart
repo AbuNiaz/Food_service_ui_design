@@ -13,7 +13,36 @@ class _HeaderState extends State<Header> {
       delegate: SliverChildListDelegate(
         [
           Column(
-            children: [],
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                height: size.height / 5,
+                decoration: const BoxDecoration(
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.vertical(
+                    bottom: Radius.circular(40),
+                  ),
+                  boxShadow: [
+                    BoxShadow(blurRadius: 2),
+                  ],
+                ),
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: const [
+                        CircleAvatar(
+                          backgroundColor: Colors.white70,
+                          radius: 30,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),
