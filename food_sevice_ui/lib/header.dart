@@ -36,6 +36,10 @@ class _HeaderState extends State<Header> {
                         CircleAvatar(
                           backgroundColor: Colors.white70,
                           radius: 30,
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage(""),
+                            radius: 28,
+                          ),
                         ),
                       ],
                     )
