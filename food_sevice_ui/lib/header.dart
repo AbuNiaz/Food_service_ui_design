@@ -37,7 +37,7 @@ class _HeaderState extends State<Header> {
                           backgroundColor: Colors.white70,
                           radius: 30,
                           child: CircleAvatar(
-                            backgroundImage: AssetImage(""),
+                            backgroundImage: AssetImage("images/g5.jpg"),
                             radius: 28,
                           ),
                         ),
