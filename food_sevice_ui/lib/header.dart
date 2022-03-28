@@ -93,7 +93,14 @@ class _HeaderState extends State<Header> {
                     margin: const EdgeInsets.symmetric(horizontal: 50),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    child: TextField(),
+                    child: const TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        labelText: "What does your belly want to eat",
+                        suffixIcon: Icon(Icons.search),
+                        contentPadding: EdgeInsets.only(left: 20),
+                      ),
+                    ),
                   ),
                 ),
               )
