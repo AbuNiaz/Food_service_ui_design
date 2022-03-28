@@ -75,7 +75,7 @@ class _HeaderState extends State<Header> {
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18),
-                            )
+                            ),
                           ],
                         )
                       ],
