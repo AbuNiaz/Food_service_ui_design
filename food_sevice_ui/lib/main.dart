@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          appBarTheme:
-              const AppBarTheme(color: Colors.teal, centerTitle: true)),
+          appBarTheme: const AppBarTheme(color: Colors.teal, centerTitle: true),
+          bottomAppBarColor: Colors.teal,
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+              backgroundColor: Colors.teal)),
       home: const Hamberger(),
     );
   }
@@ -52,26 +54,33 @@ class _HambergerState extends State<Hamberger> {
           ]))
         ],
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Icon(Icons.home),
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: [
-            const Spacer(),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.add_alert),
-            ),
-            const Spacer(),
-            const Spacer(),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.turned_in),
-            ),
-            const Spacer(),
-          ],
+      bottomNavigationBar: ClipRRect(
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(40)),
+        child: BottomAppBar(
+          shape: const CircularNotchedRectangle(),
+          child: Row(
+            children: [
+              const Spacer(),
+              IconButton(
+                onPressed: () {},
+                color: Colors.white,
+                icon: const Icon(Icons.add_alert),
+              ),
+              const Spacer(),
+              const Spacer(),
+              IconButton(
+                onPressed: () {},
+                color: Colors.white,
+                icon: const Icon(Icons.turned_in),
+              ),
+              const Spacer(),
+            ],
+          ),
         ),
       ),
     );
