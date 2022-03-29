@@ -52,6 +52,24 @@ class _HambergerState extends State<Hamberger> {
           ]))
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            const Spacer(),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.add_alert),
+            ),
+            const Spacer(),
+            const Spacer(),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.turned_in),
+            ),
+            const Spacer(),
+          ],
+        ),
+      ),
     );
   }
 }

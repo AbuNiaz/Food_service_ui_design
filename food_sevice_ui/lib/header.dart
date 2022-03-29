@@ -69,6 +69,7 @@ class _HeaderState extends State<Header> {
                                 ),
                               ],
                             ),
+                            const Spacer(),
                             const Text(
                               "154 \$ CAN",
                               style: TextStyle(
