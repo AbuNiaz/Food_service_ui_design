@@ -52,6 +52,10 @@ class _HambergerState extends State<Hamberger> {
           ]))
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.home),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
