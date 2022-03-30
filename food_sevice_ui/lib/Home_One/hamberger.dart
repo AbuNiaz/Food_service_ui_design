@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Home_One/bottom_nav.dart';
 import 'package:food_sevice_ui/Header_File/header.dart';
+import 'package:food_sevice_ui/categories.dart';
 
 class Hamberger extends StatefulWidget {
   const Hamberger({Key? key}) : super(key: key);
@@ -25,6 +26,7 @@ class _HambergerState extends State<Hamberger> {
             ],
           ),
           Header(),
+          const Categories(),
           SliverList(
               delegate: SliverChildListDelegate([
             const Text(
