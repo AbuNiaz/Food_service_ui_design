@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        cardColor: Colors.teal,
         appBarTheme: const AppBarTheme(color: Colors.teal, centerTitle: true),
         bottomAppBarColor: Colors.teal,
         floatingActionButtonTheme:
