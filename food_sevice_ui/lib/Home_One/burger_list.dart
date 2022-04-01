@@ -11,6 +11,21 @@ class _BurgerListState extends State<BurgerList> {
   @override
   Widget build(BuildContext context) {
     int item = 10;
+    //
+    //
+    Widget simpleImage = Container(
+      height: 160,
+      child: Image.asset("images/b2.jpg"),
+    );
+    //
+    //
+    Widget chickenImage = Container(
+      height: 160,
+      child: Image.asset("images/b3.jpg"),
+    );
+    //
+    //
+
     return SliverToBoxAdapter(
       child: Container(
         height: 240,
@@ -28,6 +43,7 @@ class _BurgerListState extends State<BurgerList> {
                 child: GestureDetector(
                   onTap: () {},
                   child: Card(
+                    color: Theme.of(context).primaryColor,
                     child: Padding(
                       padding: const EdgeInsets.only(top: 15),
                       child: Column(
@@ -64,9 +80,24 @@ class _BurgerListState extends State<BurgerList> {
                         ],
                       ),
                     ),
+                    elevation: 3,
+                    margin: const EdgeInsets.all(10),
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(45),
+                      bottomRight: Radius.circular(15),
+                      topLeft: Radius.circular(45),
+                      topRight: Radius.circular(45),
+                    )),
                   ),
                 ),
               ),
+              Positioned(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: index.isEven ? chickenImage : simpleImage,
+                ),
+              )
             ],
           ),
         ),
