@@ -31,14 +31,36 @@ class _BurgerListState extends State<BurgerList> {
                     child: Padding(
                       padding: const EdgeInsets.only(top: 15),
                       child: Column(
-                        children: const [
-                          Text(
+                        children: [
+                          const Text(
                             "Burger",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold),
                           ),
+                          const Spacer(),
+                          Row(
+                            children: [
+                              const Spacer(),
+                              const Text(
+                                "15.95 \$ CAN",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const Spacer(),
+                              Container(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10)),
+                                  child: const Icon(Icons.add),
+                                ),
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ),
