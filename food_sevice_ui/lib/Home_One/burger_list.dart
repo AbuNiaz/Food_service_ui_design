@@ -96,7 +96,7 @@ class _BurgerListState extends State<BurgerList> {
                   ),
                 ),
                 Positioned(
-                  top: reverse ? 50 : 50,
+                  top: reverse ? 75 : 50,
                   child: GestureDetector(
                     onTap: () {},
                     child: reverse ? chickenImage : simpleImage,
