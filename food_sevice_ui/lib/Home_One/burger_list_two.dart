@@ -15,14 +15,14 @@ class _BurgerListState extends State<BurgerListTwo> {
     //
     Widget simpleBurger = Container(
       height: 95,
-      width: 150,
+      width: 130,
       child: Image.asset("images/b2.jpg"),
     );
     //
     //
     Widget chickenBurder = Container(
       height: 95,
-      width: 150,
+      width: 130,
       child: Image.asset("images/b3.jpg"),
     );
     //
@@ -31,7 +31,7 @@ class _BurgerListState extends State<BurgerListTwo> {
     return SliverToBoxAdapter(
       child: Container(
         height: 240,
-        margin: const EdgeInsets.only(top: 5),
+        margin: const EdgeInsets.only(top: 0, left: 5),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: item,
@@ -42,14 +42,15 @@ class _BurgerListState extends State<BurgerListTwo> {
                 Container(
                   height: 220,
                   width: 180,
-                  margin:
-                      EdgeInsets.only(left: 15, right: index == item ? 15 : 0),
+                  margin: EdgeInsets.only(left: 15, bottom: 40, top: 5),
                   child: GestureDetector(
                     onTap: () {},
                     child: Card(
                       color: Theme.of(context).primaryColor,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 15),
+                        padding: const EdgeInsets.only(
+                          top: 10,
+                        ),
                         child: Column(
                           children: [
                             Text(
@@ -98,7 +99,7 @@ class _BurgerListState extends State<BurgerListTwo> {
                   ),
                 ),
                 Positioned(
-                  top: reverse ? 70 : 70,
+                  top: reverse ? 60 : 60,
                   child: GestureDetector(
                     onTap: () {},
                     child: reverse ? chickenBurder : simpleBurger,
