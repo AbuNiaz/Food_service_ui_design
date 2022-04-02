@@ -102,12 +102,13 @@ class _BurgerListState extends State<BurgerListTwo> {
                       elevation: 3,
                       margin: const EdgeInsets.all(10),
                       shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(45),
-                        bottomRight: Radius.circular(15),
-                        topLeft: Radius.circular(45),
-                        topRight: Radius.circular(45),
-                      )),
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(45),
+                          bottomRight: Radius.circular(15),
+                          topLeft: Radius.circular(45),
+                          topRight: Radius.circular(45),
+                        ),
+                      ),
                     ),
                   ),
                 ),
