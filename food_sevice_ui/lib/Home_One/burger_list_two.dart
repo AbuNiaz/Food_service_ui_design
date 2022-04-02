@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 
-class BurgerList extends StatefulWidget {
-  const BurgerList({Key? key}) : super(key: key);
+class BurgerListTwo extends StatefulWidget {
+  const BurgerListTwo({Key? key}) : super(key: key);
 
   @override
-  State<BurgerList> createState() => _BurgerListState();
+  State<BurgerListTwo> createState() => _BurgerListState();
 }
 
-class _BurgerListState extends State<BurgerList> {
+class _BurgerListState extends State<BurgerListTwo> {
   @override
   Widget build(BuildContext context) {
     int item = 10;
     //
     //
-    Widget simpleImage = Container(
+    Widget simpleBurger = Container(
       height: 95,
       width: 150,
       child: Image.asset("images/b2.jpg"),
     );
     //
     //
-    Widget chickenImage = Container(
+    Widget chickenBurder = Container(
       height: 95,
       width: 150,
       child: Image.asset("images/b3.jpg"),
@@ -31,7 +31,7 @@ class _BurgerListState extends State<BurgerList> {
     return SliverToBoxAdapter(
       child: Container(
         height: 240,
-        margin: const EdgeInsets.only(top: 15),
+        margin: const EdgeInsets.only(top: 5),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: item,
@@ -101,9 +101,9 @@ class _BurgerListState extends State<BurgerList> {
                   top: reverse ? 70 : 70,
                   child: GestureDetector(
                     onTap: () {},
-                    child: reverse ? chickenImage : simpleImage,
+                    child: reverse ? chickenBurder : simpleBurger,
                   ),
-                )
+                ),
               ],
             );
           },
