@@ -15,12 +15,14 @@ class _BurgerListState extends State<BurgerList> {
     //
     Widget simpleImage = Container(
       height: 95,
+      width: 150,
       child: Image.asset("images/b2.jpg"),
     );
     //
     //
     Widget chickenImage = Container(
       height: 95,
+      width: 150,
       child: Image.asset("images/b3.jpg"),
     );
     //
@@ -38,8 +40,8 @@ class _BurgerListState extends State<BurgerList> {
             return Stack(
               children: [
                 Container(
-                  height: 240,
-                  width: 200,
+                  height: 220,
+                  width: 180,
                   margin:
                       EdgeInsets.only(left: 15, right: index == item ? 15 : 0),
                   child: GestureDetector(
@@ -96,7 +98,7 @@ class _BurgerListState extends State<BurgerList> {
                   ),
                 ),
                 Positioned(
-                  top: reverse ? 75 : 50,
+                  top: reverse ? 70 : 70,
                   child: GestureDetector(
                     onTap: () {},
                     child: reverse ? chickenImage : simpleImage,
