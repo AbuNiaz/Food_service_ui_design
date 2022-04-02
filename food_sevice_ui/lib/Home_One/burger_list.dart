@@ -15,15 +15,17 @@ class _BurgerListState extends State<BurgerList> {
     //
     Widget simpleImage = Container(
       height: 95,
-      width: 150,
+      width: 130,
       child: Image.asset("images/b2.jpg"),
     );
     //
     //
     Widget chickenImage = Container(
       height: 95,
-      width: 150,
-      child: Image.asset("images/b3.jpg"),
+      width: 130,
+      child: Image.asset(
+        "images/b3.jpg",
+      ),
     );
     //
     //
@@ -31,7 +33,7 @@ class _BurgerListState extends State<BurgerList> {
     return SliverToBoxAdapter(
       child: Container(
         height: 240,
-        margin: const EdgeInsets.only(top: 15),
+        margin: const EdgeInsets.only(top: 10, left: 10),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: item,
@@ -41,9 +43,8 @@ class _BurgerListState extends State<BurgerList> {
               children: [
                 Container(
                   height: 220,
-                  width: 180,
-                  margin:
-                      EdgeInsets.only(left: 15, right: index == item ? 15 : 0),
+                  width: 160,
+                  margin: const EdgeInsets.only(left: 15, bottom: 40, top: 5),
                   child: GestureDetector(
                     onTap: () {},
                     child: Card(
@@ -53,10 +54,10 @@ class _BurgerListState extends State<BurgerList> {
                         child: Column(
                           children: [
                             Text(
-                              reverse ? "Chiken Burger" : "Simple Burger",
+                              reverse ? "Chicken Burger" : "Simple Burger",
                               style: const TextStyle(
                                   color: Colors.white,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.bold),
                             ),
                             const Spacer(),
@@ -64,15 +65,15 @@ class _BurgerListState extends State<BurgerList> {
                               children: [
                                 const Spacer(),
                                 const Text(
-                                  "15.95 \$ CAN",
+                                  "150 BDT",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 const Spacer(),
                                 Container(
-                                  height: 50,
-                                  width: 50,
+                                  height: 40,
+                                  width: 40,
                                   child: Card(
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
@@ -98,12 +99,12 @@ class _BurgerListState extends State<BurgerList> {
                   ),
                 ),
                 Positioned(
-                  top: reverse ? 70 : 70,
+                  top: reverse ? 63 : 63,
                   child: GestureDetector(
                     onTap: () {},
                     child: reverse ? chickenImage : simpleImage,
                   ),
-                )
+                ),
               ],
             );
           },

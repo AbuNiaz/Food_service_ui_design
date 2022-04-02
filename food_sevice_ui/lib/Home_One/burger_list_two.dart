@@ -31,7 +31,7 @@ class _BurgerListState extends State<BurgerListTwo> {
     return SliverToBoxAdapter(
       child: Container(
         height: 240,
-        margin: const EdgeInsets.only(top: 0, left: 5),
+        margin: const EdgeInsets.only(top: 0, left: 10),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: item,
@@ -41,7 +41,7 @@ class _BurgerListState extends State<BurgerListTwo> {
               children: [
                 Container(
                   height: 220,
-                  width: 180,
+                  width: 160,
                   margin: EdgeInsets.only(left: 15, bottom: 40, top: 5),
                   child: GestureDetector(
                     onTap: () {},
@@ -54,26 +54,27 @@ class _BurgerListState extends State<BurgerListTwo> {
                         child: Column(
                           children: [
                             Text(
-                              reverse ? "Chiken Burger" : "Simple Burger",
+                              reverse ? "Chicken Burger" : "Simple Burger",
                               style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold),
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             const Spacer(),
                             Row(
                               children: [
                                 const Spacer(),
                                 const Text(
-                                  "15.95 \$ CAN",
+                                  "150 BDT",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 const Spacer(),
                                 Container(
-                                  height: 50,
-                                  width: 50,
+                                  height: 40,
+                                  width: 40,
                                   child: Card(
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
@@ -99,7 +100,7 @@ class _BurgerListState extends State<BurgerListTwo> {
                   ),
                 ),
                 Positioned(
-                  top: reverse ? 60 : 60,
+                  top: reverse ? 63 : 63,
                   child: GestureDetector(
                     onTap: () {},
                     child: reverse ? chickenBurder : simpleBurger,

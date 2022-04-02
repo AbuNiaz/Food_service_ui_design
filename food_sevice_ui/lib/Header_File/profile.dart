@@ -50,7 +50,7 @@ class Profile extends StatelessWidget {
             ),
             const Spacer(),
             const Text(
-              "154 \$ CAN",
+              "154 BDT",
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,

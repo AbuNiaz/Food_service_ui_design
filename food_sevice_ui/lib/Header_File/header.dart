@@ -46,7 +46,7 @@ class _HeaderState extends State<Header> {
                     child: const TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        labelText: "What does your belly want to eat",
+                        labelText: "What you need",
                         suffixIcon: Icon(Icons.search),
                         contentPadding: EdgeInsets.only(left: 20),
                       ),
