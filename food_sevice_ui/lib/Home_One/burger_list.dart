@@ -14,18 +14,28 @@ class _BurgerListState extends State<BurgerList> {
     //
     //
     Widget simpleImage = Container(
-      height: 95,
+      height: 115,
       width: 130,
-      child: Image.asset("images/b2.jpg"),
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "images/b2.jpg",
+            ),
+          ),
+          shape: BoxShape.circle),
     );
     //
     //
     Widget chickenImage = Container(
-      height: 95,
+      height: 115,
       width: 130,
-      child: Image.asset(
-        "images/b3.jpg",
-      ),
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "images/b3.jpg",
+            ),
+          ),
+          shape: BoxShape.circle),
     );
     //
     //
@@ -99,7 +109,7 @@ class _BurgerListState extends State<BurgerList> {
                   ),
                 ),
                 Positioned(
-                  top: reverse ? 63 : 63,
+                  top: reverse ? 48 : 48,
                   child: GestureDetector(
                     onTap: () {},
                     child: reverse ? chickenImage : simpleImage,
