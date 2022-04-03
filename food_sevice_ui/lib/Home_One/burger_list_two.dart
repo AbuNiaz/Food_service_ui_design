@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/Home_One/burger_page.dart';
 
 class BurgerListTwo extends StatefulWidget {
   @override
@@ -65,7 +66,12 @@ class _BurgerListState extends State<BurgerListTwo> {
                       margin:
                           const EdgeInsets.only(left: 15, bottom: 40, top: 5),
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const BurgerPage()));
+                        },
                         child: Card(
                           color: Theme.of(context).primaryColor,
                           child: Padding(
@@ -124,7 +130,12 @@ class _BurgerListState extends State<BurgerListTwo> {
                     Positioned(
                       top: reverse ? 48 : 48,
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const BurgerPage()));
+                        },
                         child: reverse ? chickenBurder : simpleBurger,
                       ),
                     ),
