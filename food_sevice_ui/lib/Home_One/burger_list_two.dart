@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class BurgerListTwo extends StatefulWidget {
-  const BurgerListTwo({Key? key}) : super(key: key);
-
   @override
   State<BurgerListTwo> createState() => _BurgerListState();
 }
@@ -45,7 +43,7 @@ class _BurgerListState extends State<BurgerListTwo> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(left: 8),
             child: Text(
               "Most Pupoler:",
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),

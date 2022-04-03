@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class BurgerList extends StatefulWidget {
-  const BurgerList({Key? key}) : super(key: key);
-
   @override
   State<BurgerList> createState() => _BurgerListState();
 }
@@ -54,7 +52,7 @@ class _BurgerListState extends State<BurgerList> {
                 Container(
                   height: 220,
                   width: 160,
-                  margin: const EdgeInsets.only(left: 15, bottom: 40, top: 5),
+                  margin: const EdgeInsets.only(left: 15, top: 5),
                   child: GestureDetector(
                     onTap: () {},
                     child: Card(

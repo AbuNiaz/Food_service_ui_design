@@ -36,7 +36,7 @@ class _HeaderState extends State<Header> {
               Positioned(
                 bottom: 0,
                 child: Container(
-                  height: 50,
+                  height: 40,
                   width: size.width,
                   child: Card(
                     elevation: 3,
@@ -46,7 +46,7 @@ class _HeaderState extends State<Header> {
                     child: const TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        labelText: "What you need",
+                        hintText: "What you need?",
                         suffixIcon: Icon(Icons.search),
                         contentPadding: EdgeInsets.only(left: 20),
                       ),
