@@ -57,13 +57,15 @@ class _BurgerListState extends State<BurgerList> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const BurgerPage(
-                                    img: "images/b3.jpg",
-                                    price: "150 BDT",
-                                    title: "Chicken Burger",
-                                  )));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const BurgerPage(
+                            img: "images/b3.jpg",
+                            price: "150 BDT",
+                            title: "Chicken Burger",
+                          ),
+                        ),
+                      );
                     },
                     child: Card(
                       color: Theme.of(context).primaryColor,
