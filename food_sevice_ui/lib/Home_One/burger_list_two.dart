@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_sevice_ui/Home_One/burger_page.dart';
+import 'package:food_sevice_ui/Burger_details/burger_page.dart';
 
 class BurgerListTwo extends StatefulWidget {
   @override
@@ -70,7 +70,11 @@ class _BurgerListState extends State<BurgerListTwo> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const BurgerPage()));
+                                  builder: (context) => const BurgerPage(
+                                        img: "images/b3.jpg",
+                                        price: "150 BDT",
+                                        title: "Chicken Burger",
+                                      )));
                         },
                         child: Card(
                           color: Theme.of(context).primaryColor,
@@ -134,7 +138,11 @@ class _BurgerListState extends State<BurgerListTwo> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const BurgerPage()));
+                                  builder: (context) => const BurgerPage(
+                                        img: "images/b3.jpg",
+                                        price: "150 BDT",
+                                        title: "Chicken Burger",
+                                      )));
                         },
                         child: reverse ? chickenBurder : simpleBurger,
                       ),
