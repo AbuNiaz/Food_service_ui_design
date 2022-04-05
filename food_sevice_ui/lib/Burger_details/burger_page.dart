@@ -20,7 +20,7 @@ class BurgerPage extends StatelessWidget {
             onPressed: () {
               Navigator.of(context);
             },
-            icon: Icon(Icons.arrow_back_ios_new_outlined)),
+            icon: const Icon(Icons.arrow_back_ios_new_outlined)),
       ),
     );
   }
