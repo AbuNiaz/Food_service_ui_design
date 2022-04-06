@@ -14,21 +14,22 @@ class BurgerPage extends StatelessWidget {
     BuildContext context,
   ) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        leading: IconButton(
-            onPressed: () {
-              Navigator.of(context);
-            },
-            icon: const Icon(Icons.arrow_back_ios_new_outlined)),
-      ),
-      body: CustomScrollView(
-        slivers: [
-          Container(
-            height: 200,
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text(title),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.of(context);
+              },
+              icon: const Icon(Icons.arrow_back_ios_new_outlined)),
+          elevation: 0,
+        ),
+        body: Stack(
+          children: [
+            Container(
+              height: 200,
+              color: Colors.teal,
+            )
+          ],
+        ));
   }
 }
