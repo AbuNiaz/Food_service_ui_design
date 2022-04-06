@@ -27,7 +27,11 @@ class BurgerPage extends StatelessWidget {
           children: [
             Container(
               height: 200,
-              color: Colors.teal,
+              decoration: const BoxDecoration(
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(50),
+                      bottomRight: Radius.circular(50))),
             )
           ],
         ));
