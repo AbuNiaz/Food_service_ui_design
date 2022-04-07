@@ -68,13 +68,15 @@ class _BurgerListState extends State<BurgerListTwo> {
                       child: GestureDetector(
                         onTap: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const BurgerPage(
-                                        img: "images/b3.jpg",
-                                        price: "150 BDT",
-                                        title: "Chicken Burger",
-                                      )));
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BurgerPage(
+                                img: "images/b3.jpg",
+                                price: "150 BDT",
+                                title: "Chicken Burger",
+                              ),
+                            ),
+                          );
                         },
                         child: Card(
                           color: Theme.of(context).primaryColor,
@@ -108,8 +110,9 @@ class _BurgerListState extends State<BurgerListTwo> {
                                       width: 40,
                                       child: Card(
                                         shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
                                         child: const Icon(Icons.add),
                                       ),
                                     ),
@@ -136,13 +139,15 @@ class _BurgerListState extends State<BurgerListTwo> {
                       child: GestureDetector(
                         onTap: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const BurgerPage(
-                                        img: "images/b3.jpg",
-                                        price: "150 BDT",
-                                        title: "Chicken Burger",
-                                      )));
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BurgerPage(
+                                img: "images/b3.jpg",
+                                price: "150 BDT",
+                                title: "Chicken Burger",
+                              ),
+                            ),
+                          );
                         },
                         child: reverse ? chickenBurder : simpleBurger,
                       ),
