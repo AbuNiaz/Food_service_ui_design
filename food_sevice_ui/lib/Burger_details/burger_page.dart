@@ -17,10 +17,11 @@ class BurgerPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
         leading: IconButton(
-            onPressed: () {
-              Navigator.of(context);
-            },
-            icon: const Icon(Icons.arrow_back_ios_new_outlined)),
+          onPressed: () {
+            Navigator.of(context);
+          },
+          icon: const Icon(Icons.arrow_back_ios_new_outlined),
+        ),
         elevation: 0,
       ),
       body: Stack(
