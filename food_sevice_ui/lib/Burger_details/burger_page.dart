@@ -11,7 +11,6 @@ class BurgerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -21,13 +20,16 @@ class BurgerPage extends StatelessWidget {
           },
           icon: const Icon(Icons.arrow_back_ios_new_outlined),
         ),
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart))
+        ],
         elevation: 0,
       ),
       body: Stack(
         children: [
           Container(
             height: 200,
-            width: size.width,
+            width: 500,
             decoration: const BoxDecoration(
               color: Colors.teal,
               borderRadius: BorderRadius.only(
@@ -35,10 +37,21 @@ class BurgerPage extends StatelessWidget {
                 bottomRight: Radius.circular(50),
               ),
             ),
-            child: Image.asset(
-              img,
-              height: 200,
-              width: 200,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Container(
+                  height: 200,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      image: AssetImage(img),
+                    ),
+                  ),
+                ),
+                Text(price),
+              ],
             ),
           ),
         ],
