@@ -25,42 +25,63 @@ class BurgerPage extends StatelessWidget {
         ],
         elevation: 0,
       ),
-      body: Stack(
+      body: Column(
         children: [
-          Container(
-            height: 200,
-            width: 500,
-            decoration: const BoxDecoration(
-              color: Colors.teal,
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(50),
-                bottomRight: Radius.circular(50),
+          Stack(
+            children: [
+              Container(
+                height: 200,
+                width: 500,
+                decoration: const BoxDecoration(
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50),
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage(img),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        price,
+                        style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Container(
-                  height: 200,
+            ],
+          ),
+          Spacer(),
+          FlatButton(
+              onPressed: () {},
+              child: Container(
+                  height: 50,
                   width: 200,
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: DecorationImage(
-                      image: AssetImage(img),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    price,
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            ),
-          ),
+                      color: Colors.teal,
+                      borderRadius: BorderRadius.circular(50)),
+                  child: const Center(
+                      child: Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ))))
         ],
       ),
     );
