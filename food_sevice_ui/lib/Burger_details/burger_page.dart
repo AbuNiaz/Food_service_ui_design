@@ -10,9 +10,8 @@ class BurgerPage extends StatelessWidget {
       : super(key: key);
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -28,12 +27,18 @@ class BurgerPage extends StatelessWidget {
         children: [
           Container(
             height: 200,
+            width: size.width,
             decoration: const BoxDecoration(
               color: Colors.teal,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(50),
                 bottomRight: Radius.circular(50),
               ),
+            ),
+            child: Image.asset(
+              img,
+              height: 200,
+              width: 200,
             ),
           ),
         ],
