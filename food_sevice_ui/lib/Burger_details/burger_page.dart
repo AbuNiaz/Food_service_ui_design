@@ -38,6 +38,7 @@ class BurgerPage extends StatelessWidget {
               ),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Container(
@@ -50,7 +51,13 @@ class BurgerPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(price),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    price,
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                ),
               ],
             ),
           ),
