@@ -29,9 +29,11 @@ class _CategoriesState extends State<Categories> {
                     margin: const EdgeInsets.only(left: 15, right: 15),
                     child: GestureDetector(
                       onTap: () {
-                        setState(() {
-                          currentSelectedItem = index;
-                        });
+                        setState(
+                          () {
+                            currentSelectedItem = index;
+                          },
+                        );
                       },
                       child: Card(
                         color: index == currentSelectedItem
@@ -66,7 +68,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
