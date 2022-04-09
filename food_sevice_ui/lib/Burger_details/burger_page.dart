@@ -21,7 +21,10 @@ class BurgerPage extends StatelessWidget {
           icon: const Icon(Icons.arrow_back_ios_new_outlined),
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart))
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.shopping_cart),
+          )
         ],
         elevation: 0,
       ),
@@ -75,7 +78,9 @@ class BurgerPage extends StatelessWidget {
               height: 50,
               width: 200,
               decoration: BoxDecoration(
-                  color: Colors.teal, borderRadius: BorderRadius.circular(50)),
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(50),
+              ),
               child: const Center(
                 child: Text(
                   "Continue",
