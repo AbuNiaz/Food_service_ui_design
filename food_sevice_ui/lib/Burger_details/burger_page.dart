@@ -70,18 +70,20 @@ class BurgerPage extends StatelessWidget {
           ),
           Spacer(),
           FlatButton(
-              onPressed: () {},
-              child: Container(
-                  height: 50,
-                  width: 200,
-                  decoration: BoxDecoration(
-                      color: Colors.teal,
-                      borderRadius: BorderRadius.circular(50)),
-                  child: const Center(
-                      child: Text(
-                    "Continue",
-                    style: TextStyle(fontSize: 18, color: Colors.white),
-                  ))))
+            onPressed: () {},
+            child: Container(
+              height: 50,
+              width: 200,
+              decoration: BoxDecoration(
+                  color: Colors.teal, borderRadius: BorderRadius.circular(50)),
+              child: const Center(
+                child: Text(
+                  "Continue",
+                  style: TextStyle(fontSize: 18, color: Colors.white),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
