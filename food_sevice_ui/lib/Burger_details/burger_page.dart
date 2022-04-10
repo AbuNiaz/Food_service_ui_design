@@ -75,25 +75,28 @@ class BurgerPage extends StatelessWidget {
             height: 10,
           ),
           Container(
-            height: 100,
+            height: 70,
             width: double.infinity,
-            color: Colors.red,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(title,
-                    style: const TextStyle(
-                      fontSize: 22,
-                    )),
-                const SizedBox(
-                  height: 5,
-                ),
-                const Text("Fully chicken flavour",
-                    style: TextStyle(
-                      color: Colors.black12,
-                      fontSize: 15,
-                    ))
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title,
+                      style: const TextStyle(
+                          fontSize: 22,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.w500)),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  const Text("Fully chicken flavour",
+                      style: TextStyle(
+                        color: Colors.black12,
+                        fontSize: 15,
+                      ))
+                ],
+              ),
             ),
           ),
           const Spacer(),
