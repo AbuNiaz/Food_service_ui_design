@@ -71,6 +71,11 @@ class BurgerPage extends StatelessWidget {
               ),
             ],
           ),
+          Container(
+            height: 150,
+            width: double.infinity,
+            color: Colors.red,
+          ),
           Spacer(),
           FlatButton(
             onPressed: () {},
