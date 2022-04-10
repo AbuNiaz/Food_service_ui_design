@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/Burger_details/otder_count.dart';
 
 class BurgerPage extends StatelessWidget {
   final String img;
@@ -99,6 +100,7 @@ class BurgerPage extends StatelessWidget {
               ),
             ),
           ),
+          OrderCount(),
           const Spacer(),
           FlatButton(
             onPressed: () {},
