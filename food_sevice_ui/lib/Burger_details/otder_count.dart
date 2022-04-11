@@ -17,18 +17,21 @@ class _OrderCountState extends State<OrderCount> {
         children: [
           InkWell(
             onTap: () {
-              setState(() {
-                if (_orderCount > 1) {
-                  _orderCount--;
-                } else {}
-              });
+              setState(
+                () {
+                  if (_orderCount > 1) {
+                    _orderCount--;
+                  } else {}
+                },
+              );
             },
             child: Container(
               height: 40,
               width: 40,
               decoration: BoxDecoration(
-                  color: Colors.pinkAccent,
-                  borderRadius: BorderRadius.circular(10)),
+                color: Colors.pinkAccent,
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: const Center(
                 child: Text(
                   "-",
@@ -43,16 +46,19 @@ class _OrderCountState extends State<OrderCount> {
           ),
           InkWell(
             onTap: () {
-              setState(() {
-                _orderCount++;
-              });
+              setState(
+                () {
+                  _orderCount++;
+                },
+              );
             },
             child: Container(
               height: 40,
               width: 40,
               decoration: BoxDecoration(
-                  color: Colors.pinkAccent,
-                  borderRadius: BorderRadius.circular(10)),
+                color: Colors.pinkAccent,
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: const Center(
                 child: Text(
                   "+",
