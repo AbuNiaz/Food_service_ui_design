@@ -24,16 +24,18 @@ class _OrderCountState extends State<OrderCount> {
               });
             },
             child: Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                    color: Colors.pinkAccent,
-                    borderRadius: BorderRadius.circular(10)),
-                child: const Center(
-                    child: Text(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                  color: Colors.pinkAccent,
+                  borderRadius: BorderRadius.circular(10)),
+              child: const Center(
+                child: Text(
                   "-",
                   style: TextStyle(fontSize: 28),
-                ))),
+                ),
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 5, right: 5),
