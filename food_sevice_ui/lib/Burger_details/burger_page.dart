@@ -30,6 +30,7 @@ class BurgerPage extends StatelessWidget {
         elevation: 0,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
             children: [
@@ -101,20 +102,40 @@ class BurgerPage extends StatelessWidget {
             ),
           ),
           OrderCount(),
+          const SizedBox(
+            height: 20,
+          ),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              "Discription",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. text ever since the 1500s,  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
+          ),
           const Spacer(),
           FlatButton(
             onPressed: () {},
-            child: Container(
-              height: 50,
-              width: 200,
-              decoration: BoxDecoration(
-                color: Colors.teal,
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: const Center(
-                child: Text(
-                  "Continue",
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+            child: Center(
+              child: Container(
+                height: 50,
+                width: 200,
+                decoration: BoxDecoration(
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
                 ),
               ),
             ),
