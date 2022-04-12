@@ -22,16 +22,23 @@ class CartHome extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          height: 40,
-                          width: double.infinity,
-                          decoration: const BoxDecoration(
-                              color: Colors.red,
-                              image: DecorationImage(
-                                  image: AssetImage(
-                                "images/b5.jpg",
-                              ))),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(10),
+                              height: 100,
+                              width: 140,
+                              color: Colors.teal,
+                              child: Image.asset("images/b3.jpg"),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [Text("Chicken Burger")],
+                              ),
+                            )
+                          ],
                         )
                       ],
                     )
