@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ChikenBurger extends StatelessWidget {
-  const ChikenBurger({Key? key}) : super(key: key);
+class CartHome extends StatelessWidget {
+  const CartHome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
