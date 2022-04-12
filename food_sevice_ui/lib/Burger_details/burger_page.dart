@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Burger_details/otder_count.dart';
+import 'package:food_sevice_ui/Cart_Page/cart_home.dart';
 
 class BurgerPage extends StatelessWidget {
   final String img;
@@ -23,7 +24,10 @@ class BurgerPage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const CartHome()));
+            },
             icon: const Icon(Icons.shopping_cart),
           )
         ],
