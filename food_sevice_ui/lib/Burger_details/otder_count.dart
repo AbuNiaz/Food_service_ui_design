@@ -66,7 +66,7 @@ class _OrderCountState extends State<OrderCount> {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
