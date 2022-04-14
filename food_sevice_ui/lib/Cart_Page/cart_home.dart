@@ -9,7 +9,10 @@ class CartHome extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Cart"),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.notifications),
+          )
         ],
         elevation: 0,
       ),
