@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Burger_details/burger_page.dart';
 
 class BurgerListTwo extends StatefulWidget {
+  const BurgerListTwo({Key? key}) : super(key: key);
+
   @override
   State<BurgerListTwo> createState() => _BurgerListState();
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Header_File/profile.dart';
 
 class Header extends StatefulWidget {
+  const Header({Key? key}) : super(key: key);
+
   @override
   State<Header> createState() => _HeaderState();
 }

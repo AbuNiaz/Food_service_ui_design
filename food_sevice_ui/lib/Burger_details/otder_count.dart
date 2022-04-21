@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OrderCount extends StatefulWidget {
+  const OrderCount({Key? key}) : super(key: key);
+
   @override
   State<OrderCount> createState() => _OrderCountState();
 }

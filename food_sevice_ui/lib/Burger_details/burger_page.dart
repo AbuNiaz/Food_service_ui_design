@@ -105,7 +105,7 @@ class BurgerPage extends StatelessWidget {
               ),
             ),
           ),
-          OrderCount(),
+          const OrderCount(),
           const SizedBox(
             height: 20,
           ),
