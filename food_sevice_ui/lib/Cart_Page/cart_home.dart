@@ -12,7 +12,7 @@ class CartHome extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.notifications),
-          )
+          ),
         ],
         elevation: 0,
       ),
