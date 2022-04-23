@@ -47,6 +47,7 @@ class CartHome extends StatelessWidget {
                   ),
                 ],
               ),
+              TextButton(onPressed: () {}, child: Container())
             ],
           ),
         ),
