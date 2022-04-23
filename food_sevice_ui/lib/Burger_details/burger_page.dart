@@ -16,12 +16,6 @@ class BurgerPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
-        leading: IconButton(
-          onPressed: () {
-            Navigator.of(context);
-          },
-          icon: const Icon(Icons.arrow_back_ios_new_outlined),
-        ),
         actions: [
           IconButton(
             onPressed: () {
