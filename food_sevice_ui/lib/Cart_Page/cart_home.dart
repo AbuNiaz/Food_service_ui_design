@@ -50,9 +50,9 @@ class CartHome extends StatelessWidget {
               TextButton(
                 child: const Text('Continue'),
                 style: TextButton.styleFrom(
-                  primary: Colors.white,
-                  backgroundColor: Colors.teal,
-                  onSurface: Colors.grey,
+                  primary: Colors.teal,
+                  shadowColor: Colors.red,
+                  elevation: 5,
                 ),
                 onPressed: () {},
               ),
