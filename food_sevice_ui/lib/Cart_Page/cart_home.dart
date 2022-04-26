@@ -41,6 +41,11 @@ class CartHome extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
+                          Text(
+                            'Best Burger',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black12),
+                          ),
                         ],
                       ),
                     ),
