@@ -32,12 +32,16 @@ class CartHome extends StatelessWidget {
                       height: 150,
                       width: 150,
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(top: 20, left: 10),
-                      child: Text(
-                        'Simple Burger',
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20, left: 10),
+                      child: Column(
+                        children: const [
+                          Text(
+                            'Simple Burger',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                   ],
