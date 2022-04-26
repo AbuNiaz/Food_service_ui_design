@@ -20,7 +20,20 @@ class CartHome extends StatelessWidget {
         height: 500,
         width: double.infinity,
         child: ListView(
-          children: const [Text("Hello")],
+          children: [
+            Card(
+              child: Row(
+                children: [
+                  Image.asset(
+                    'images/b4.jpg',
+                    height: 150,
+                    width: 150,
+                  )
+                ],
+              ),
+              elevation: 5,
+            )
+          ],
         ),
       ),
     );
