@@ -23,12 +23,17 @@ class CartHome extends StatelessWidget {
           children: [
             Card(
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
                     'images/b4.jpg',
                     height: 150,
                     width: 150,
-                  )
+                  ),
+                  const Text(
+                    'Simple Burger',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
               elevation: 5,
