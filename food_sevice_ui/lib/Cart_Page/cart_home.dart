@@ -19,45 +19,8 @@ class CartHome extends StatelessWidget {
       body: Container(
         height: 500,
         width: double.infinity,
-        child: ListView.builder(
-          itemCount: 3,
-          itemBuilder: (context, index) => Stack(
-            children: [
-              Column(
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.all(10),
-                        height: 100,
-                        width: 140,
-                        color: Colors.teal,
-                        child: Image.asset("images/b3.jpg"),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: const [
-                            Text("Chicken Burger"),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              TextButton(
-                child: const Text('Continue'),
-                style: TextButton.styleFrom(
-                  primary: Colors.teal,
-                  shadowColor: Colors.red,
-                  elevation: 5,
-                ),
-                onPressed: () {},
-              ),
-            ],
-          ),
+        child: ListView(
+          children: const [Text("Hello")],
         ),
       ),
     );
