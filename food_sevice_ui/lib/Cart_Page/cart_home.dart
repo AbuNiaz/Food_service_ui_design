@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class CartHome extends StatelessWidget {
@@ -67,15 +69,17 @@ class CartHome extends StatelessWidget {
               height: 200,
             ),
             TextButton(
-                onPressed: () {},
-                child: Container(
-                  height: 60,
-                  width: 160,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.teal,
-                  ),
-                )),
+              onPressed: () {},
+              child: const Text(
+                'Continue',
+              ),
+              style: TextButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: Colors.teal,
+                  textStyle: const TextStyle(
+                    fontSize: 24,
+                  )),
+            ),
           ],
         ),
       ),
