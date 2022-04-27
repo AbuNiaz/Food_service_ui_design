@@ -62,7 +62,7 @@ class CartHome extends StatelessWidget {
                 ),
                 elevation: 5,
               ),
-            )
+            ),
           ],
         ),
       ),
