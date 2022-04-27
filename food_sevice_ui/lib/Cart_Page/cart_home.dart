@@ -35,6 +35,7 @@ class CartHome extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 20, left: 10),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text(
                             'Simple Burger',
@@ -45,6 +46,14 @@ class CartHome extends StatelessWidget {
                             'Best Burger',
                             style:
                                 TextStyle(fontSize: 15, color: Colors.black12),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Text(
+                            '150 BDT',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
