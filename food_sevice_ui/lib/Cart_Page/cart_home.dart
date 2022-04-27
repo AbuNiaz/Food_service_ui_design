@@ -63,6 +63,19 @@ class CartHome extends StatelessWidget {
                 elevation: 5,
               ),
             ),
+            const SizedBox(
+              height: 200,
+            ),
+            TextButton(
+                onPressed: () {},
+                child: Container(
+                  height: 60,
+                  width: 160,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.teal,
+                  ),
+                )),
           ],
         ),
       ),
