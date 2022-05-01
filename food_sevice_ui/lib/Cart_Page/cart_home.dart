@@ -19,8 +19,8 @@ class CartHome extends StatelessWidget {
         elevation: 0,
       ),
       body: Container(
-        height: 500,
         width: double.infinity,
+        color: null,
         child: ListView(
           children: [
             Padding(
@@ -62,23 +62,30 @@ class CartHome extends StatelessWidget {
                     ),
                   ],
                 ),
-                elevation: 5,
+                elevation: 3,
               ),
             ),
             const SizedBox(
-              height: 200,
+              height: 400,
             ),
             TextButton(
               onPressed: () {},
-              child: const Text(
-                'Continue',
+              child: Container(
+                height: 50,
+                width: 150,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.teal),
+                child: const Center(
+                  child: Text(
+                    'Continue',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
               ),
-              style: TextButton.styleFrom(
-                  primary: Colors.white,
-                  backgroundColor: Colors.teal,
-                  textStyle: const TextStyle(
-                    fontSize: 24,
-                  )),
             ),
           ],
         ),
