@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Burger_details/otder_count.dart';
 import 'package:food_sevice_ui/Cart_Page/cart_home.dart';
+import 'package:food_sevice_ui/adress_form/a_home.dart';
 
 class BurgerPage extends StatelessWidget {
   final String img;
@@ -122,7 +123,10 @@ class BurgerPage extends StatelessWidget {
           ),
           const Spacer(),
           FlatButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const AdressHome()));
+            },
             child: Center(
               child: Container(
                 height: 50,
