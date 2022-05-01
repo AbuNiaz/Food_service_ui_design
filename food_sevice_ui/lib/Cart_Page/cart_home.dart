@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/adress_form/a_home.dart';
 
 class CartHome extends StatelessWidget {
   const CartHome({Key? key}) : super(key: key);
@@ -69,7 +70,12 @@ class CartHome extends StatelessWidget {
               height: 400,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AdressHome()));
+              },
               child: Container(
                 height: 50,
                 width: 150,
