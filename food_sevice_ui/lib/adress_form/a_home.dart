@@ -23,6 +23,22 @@ class AdressHome extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.blue),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Text('ABU NIAZ'),
+                        Text('017xxxxxxx21'),
+                        Text('Dattapara, Asulia'),
+                        Text('Savar Dhaka'),
+                      ],
+                    ),
+                    const Icon(Icons.navigate_next)
+                  ],
+                ),
               )
             ],
           )
