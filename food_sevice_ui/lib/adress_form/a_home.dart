@@ -7,7 +7,7 @@ class AdressHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add Adress'),
+        title: const Text('Add Address'),
         actions: [
           IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
