@@ -52,6 +52,18 @@ class AdressHome extends StatelessWidget {
                     const Icon(Icons.navigate_next)
                   ],
                 ),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              Container(
+                height: 30,
+                color: Colors.white10,
+                child: const Text('Add New Address',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    )),
               )
             ],
           )
