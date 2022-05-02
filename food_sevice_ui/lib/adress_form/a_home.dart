@@ -18,7 +18,7 @@ class AdressHome extends StatelessWidget {
             children: [
               Container(
                 margin: const EdgeInsets.all(8),
-                height: 200,
+                height: 170,
                 width: double.infinity,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -26,15 +26,28 @@ class AdressHome extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text('ABU NIAZ'),
-                        Text('017xxxxxxx21'),
-                        Text('Dattapara, Asulia'),
-                        Text('Savar Dhaka'),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text('ABU NIAZ',
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white)),
+                          Text('017xxxxxxx21',
+                              style:
+                                  TextStyle(fontSize: 18, color: Colors.white)),
+                          Text('Dattapara, Asulia',
+                              style:
+                                  TextStyle(fontSize: 18, color: Colors.white)),
+                          Text('Savar, Dhaka',
+                              style:
+                                  TextStyle(fontSize: 18, color: Colors.white)),
+                        ],
+                      ),
                     ),
                     const Icon(Icons.navigate_next)
                   ],
