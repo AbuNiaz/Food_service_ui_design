@@ -12,6 +12,22 @@ class AdressHome extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
       ),
+      body: ListView(
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(8),
+                height: 200,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.blue),
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
