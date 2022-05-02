@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/button.dart';
 
 class AdressHome extends StatelessWidget {
   const AdressHome({Key? key}) : super(key: key);
@@ -64,9 +65,10 @@ class AdressHome extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     )),
-              )
+              ),
             ],
-          )
+          ),
+          const Button(),
         ],
       ),
     );
