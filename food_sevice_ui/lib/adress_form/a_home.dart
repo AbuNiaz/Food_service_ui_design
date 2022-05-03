@@ -38,15 +38,18 @@ class AdressHome extends StatelessWidget {
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white)),
-                          Text('017xxxxxxx21',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.white)),
-                          Text('Dattapara, Asulia',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.white)),
-                          Text('Savar, Dhaka',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.white)),
+                          Text(
+                            '017xxxxxxx21',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
+                          Text(
+                            'Dattapara, Asulia',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
+                          Text(
+                            'Savar, Dhaka',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
                         ],
                       ),
                     ),
