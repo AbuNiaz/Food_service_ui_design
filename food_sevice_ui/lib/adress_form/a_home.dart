@@ -10,7 +10,10 @@ class AdressHome extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Add Address'),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.notifications),
+          )
         ],
       ),
       body: ListView(
@@ -22,8 +25,9 @@ class AdressHome extends StatelessWidget {
                 height: 170,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.blue),
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.blue,
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -33,11 +37,13 @@ class AdressHome extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
-                          Text('ABU NIAZ',
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white)),
+                          Text(
+                            'ABU NIAZ',
+                            style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
                           Text(
                             '017xxxxxxx21',
                             style: TextStyle(fontSize: 18, color: Colors.white),
