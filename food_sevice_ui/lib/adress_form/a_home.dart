@@ -60,11 +60,13 @@ class AdressHome extends StatelessWidget {
               Container(
                 height: 30,
                 color: Colors.white10,
-                child: const Text('Add New Address',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    )),
+                child: const Text(
+                  'Add New Address',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ],
           ),
