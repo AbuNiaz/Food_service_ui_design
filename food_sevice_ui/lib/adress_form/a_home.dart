@@ -81,6 +81,12 @@ class AdressHome extends StatelessWidget {
                 'Name',
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
+              TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'Name',
+                  hintText: 'Insert your name',
+                ),
+              ),
             ],
           ),
           const Button(),
