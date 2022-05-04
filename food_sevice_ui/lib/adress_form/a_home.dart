@@ -78,7 +78,7 @@ class AdressHome extends StatelessWidget {
                 ),
               ),
               const Text(
-                '',
+                'Name',
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
             ],
