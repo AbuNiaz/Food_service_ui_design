@@ -59,7 +59,7 @@ class AdressHome extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const Icon(Icons.navigate_next)
+                    const Icon(Icons.navigate_next),
                   ],
                 ),
               ),
