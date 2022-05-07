@@ -17,14 +17,15 @@ class _NumberRowState extends State<NumberRow> {
         Container(
           color: null,
           child: DropdownButton(
-              hint: const Text('Select Country Code'),
-              value: valueChoose,
-              onChanged: (newValue) {
-                setState(() {
-                  valueChoose == newValue;
-                });
-              },
-              items: listItem.map((listItem) {
+            hint: const Text('Select Country Code'),
+            value: valueChoose,
+            onChanged: (newValue) {
+              setState(() {
+                valueChoose == newValue;
+              });
+            },
+            items: listItem.map(
+              (listItem) {
                 return DropdownMenuItem(
                   value: listItem,
                   child: Row(
@@ -36,7 +37,9 @@ class _NumberRowState extends State<NumberRow> {
                     ],
                   ),
                 );
-              }).toList()),
+              },
+            ).toList(),
+          ),
         )
       ],
     );
