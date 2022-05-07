@@ -3,29 +3,40 @@ import 'package:flutter/material.dart';
 class NumberRow extends StatefulWidget {
   const NumberRow({Key? key}) : super(key: key);
 
- 
-
   @override
   State<NumberRow> createState() => _NumberRowState();
 }
 
 class _NumberRowState extends State<NumberRow> {
-String valueChoose ;
-  List listitem=["item 1","item 2"];
+  late String valueChoose;
+  List listItem = ["item 1", "item 2"];
   @override
   Widget build(BuildContext context) {
     return Row(
-      children:  [
+      children: [
         Container(
+          color: null,
           child: DropdownButton(
-            items:,
-            value:valueChoose ,
-            onChanged: (newValue){
-              setState(() {
-                valueChoose=newValue;
-              });
-            } ,
-            ),
+              hint: const Text('Select Country Code'),
+              value: valueChoose,
+              onChanged: (newValue) {
+                setState(() {
+                  valueChoose == newValue;
+                });
+              },
+              items: listItem.map((listItem) {
+                return DropdownMenuItem(
+                  value: listItem,
+                  child: Row(
+                    children: <Widget>[
+                      Text(
+                        listItem,
+                        style: const TextStyle(color: Colors.black),
+                      ),
+                    ],
+                  ),
+                );
+              }).toList()),
         )
       ],
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/adress_form/input_number.dart';
 import 'package:food_sevice_ui/button.dart';
 
 class AdressHome extends StatelessWidget {
@@ -94,6 +95,7 @@ class AdressHome extends StatelessWidget {
                   hintText: 'Insert your email address',
                 ),
               ),
+              const NumberRow()
             ],
           ),
           const Button(),
