@@ -88,6 +88,9 @@ class AdressHome extends StatelessWidget {
                   hintText: 'Insert your name',
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: const InputDecoration(
