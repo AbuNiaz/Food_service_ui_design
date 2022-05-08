@@ -98,6 +98,9 @@ class AdressHome extends StatelessWidget {
                   hintText: 'Insert your email address',
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
               const NumberRow()
             ],
           ),

@@ -15,7 +15,12 @@ class _NumberRowState extends State<NumberRow> {
     return Row(
       children: [
         Container(
-          color: null,
+          height: 30,
+          width: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: null,
+          ),
           child: DropdownButton(
             hint: const Text('Select Country Code'),
             value: valueChoose,
