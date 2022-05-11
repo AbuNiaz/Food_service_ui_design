@@ -78,31 +78,56 @@ class AdressHome extends StatelessWidget {
                   ),
                 ),
               ),
-              const Text(
-                'Name',
-                style: TextStyle(fontSize: 18, color: Colors.white),
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  labelText: 'Name',
-                  hintText: 'Insert your name',
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      decoration: const InputDecoration(
+                        labelText: 'Name',
+                        hintText: 'Insert your name',
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(
+                        labelText: 'Email',
+                        hintText: 'Insert your email address',
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      keyboardType: TextInputType.number,
+                      decoration: const InputDecoration(
+                        labelText: 'Phone number',
+                        hintText: 'Insert your phone number',
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      keyboardType: TextInputType.text,
+                      decoration: const InputDecoration(
+                        labelText: 'Address',
+                        hintText: 'Add your present address',
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: const InputDecoration(
-                  labelText: 'Email',
-                  hintText: 'Insert your email address',
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const NumberRow()
+              )
             ],
+          ),
+          const SizedBox(
+            height: 50,
           ),
           const Button(),
         ],
