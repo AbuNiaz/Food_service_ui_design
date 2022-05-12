@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_sevice_ui/adress_form/input_number.dart';
+import 'package:food_sevice_ui/Payment/home.dart';
+
 import 'package:food_sevice_ui/button.dart';
 
 class AdressHome extends StatelessWidget {
@@ -129,7 +130,45 @@ class AdressHome extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          const Button(),
+          TextButton(
+              onPressed: () {},
+              child: Container(
+                height: 50,
+                width: 150,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(20)),
+                child: const Center(
+                    child: Text(
+                  'Add Address',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                )),
+              )),
+          TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PaymentHome()));
+              },
+              child: Container(
+                height: 50,
+                width: 150,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(20)),
+                child: const Center(
+                    child: Text(
+                  'Continue',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                )),
+              )),
         ],
       ),
     );

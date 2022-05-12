@@ -70,6 +70,11 @@ flutter:
    - images/b10.jpg
    - images/b11.jpg
    - images/g5.jpg
+   - images/N.jpg
+   - images/C1.jpg
+   - images/B.png
+   - images/R.png
+   - images/Card.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
