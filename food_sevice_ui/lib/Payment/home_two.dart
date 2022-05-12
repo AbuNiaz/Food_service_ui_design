@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/Payment/otp.dart';
 
 class HomePageTwo extends StatelessWidget {
   const HomePageTwo({Key? key}) : super(key: key);
@@ -93,7 +94,12 @@ class HomePageTwo extends StatelessWidget {
               ),
               const Spacer(),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const OtpCode()));
+                  },
                   child: Container(
                     height: 50,
                     width: 150,
