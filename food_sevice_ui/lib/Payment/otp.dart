@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_sevice_ui/Last_Page/confirm.dart';
 
 class OtpCode extends StatelessWidget {
   const OtpCode({Key? key}) : super(key: key);
@@ -80,8 +81,10 @@ class OtpCode extends StatelessWidget {
             const Spacer(),
             TextButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const OtpCode()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ConfirmOrder()));
                 },
                 child: Container(
                   height: 50,

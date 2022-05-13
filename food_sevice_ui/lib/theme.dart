@@ -16,9 +16,9 @@ ThemeData theme() {
         floatingLabelBehavior: FloatingLabelBehavior.always,
         contentPadding: const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
         enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20), gapPadding: 4),
+            borderRadius: BorderRadius.circular(10), gapPadding: 4),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(color: Colors.blue),
           gapPadding: 4,
         ),
