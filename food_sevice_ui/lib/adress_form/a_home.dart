@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Payment/home.dart';
 
-import 'package:food_sevice_ui/button.dart';
-
 class AdressHome extends StatelessWidget {
   const AdressHome({Key? key}) : super(key: key);
 
@@ -147,6 +145,9 @@ class AdressHome extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 )),
               )),
+          const SizedBox(
+            height: 5,
+          ),
           TextButton(
               onPressed: () {
                 Navigator.push(

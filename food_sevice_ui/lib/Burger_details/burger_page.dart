@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:food_sevice_ui/Burger_details/otder_count.dart';
 import 'package:food_sevice_ui/Cart_Page/cart_home.dart';
